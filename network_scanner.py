@@ -8,7 +8,7 @@ def get_arguments():
     parser = optparse.OptionParser()
     parser.add_option("--t", "--target", dest="target", help="Enter an ip address: dd.dd.dd.dd")
     (options, arguments) = parser.parse_args()
-    if not options.ip:
+    if not options.target:
         parser.error("[-] Please specify an IP Address.  Use --help for more info.")
     return options
 
